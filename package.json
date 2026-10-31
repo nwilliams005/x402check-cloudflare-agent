@@ -1,0 +1,31 @@
+{
+  "name": "x402check-cloudflare-agent",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Cloudflare Agents example: call x402check before paying an x402 endpoint (ok|caution|avoid).",
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "test": "node --test test/*.test.js"
+  },
+  "dependencies": {
+    "x402check-client": "^0.1.1"
+  },
+  "peerDependencies": {
+    "agents": ">=0.2.0",
+    "ai": ">=4.0.0",
+    "zod": ">=3.23.0"
+  },
+  "peerDependenciesMeta": {
+    "agents": { "optional": true },
+    "ai": { "optional": true },
+    "zod": { "optional": true }
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20260503.1",
+    "typescript": "^5.9.3",
+    "wrangler": "^4.86.0"
+  },
+  "license": "MIT"
+}
