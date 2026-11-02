@@ -21,7 +21,7 @@ Set `X402CHECK_URL=https://x402check.dev` (default in `wrangler.toml`).
 
 ## Pay for checks
 
-x402check charges **$0.002 USDC Exact per tool URL** on Base. Wire a `PAYMENT-SIGNATURE` (or facilitator) into `x402check-client` via `paymentHeaders` / your settle path. See https://x402check.dev/llms.txt
+x402check charges **$0.01 USDC Exact per tool URL (optional deep $0.05)** on Base. Wire a `PAYMENT-SIGNATURE` (or facilitator) into `x402check-client` via `paymentHeaders` / your settle path. See https://x402check.dev/llms.txt
 
 ## Not
 
